@@ -1,0 +1,11 @@
+lemcu.org GPL Exception version 1.0
+-----------------------------------
+
+As an additional permission, if Lemcusb library is statically linked with one or more of the following 
+software libraries, then, these software libraries are not subjected to the TERMS AND CONDITIONS of 
+GNU General Public License version 3.0. 
+
+(1) Silicon Laboratories Inc's "emlib", "emdrv", any software supplied as part of application note and/or examples.
+(2) ARM Limited's "CMSIS".
+
+They are bound by their own terms and conditions as specified by their authors.
