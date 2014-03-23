@@ -1,4 +1,3 @@
-
 LemcUSB
 =======
 
@@ -8,7 +7,7 @@ This software enables Cortex M0+ devices to act as Low speed USB device.
 It includes a lightweight USB & HID Stack and easily be optimized to 
 consume only 4KB of flash.
 
-The development too a lot of time, especially testing. Alltough I created
+The development too a lot of time, especially testing. Alltough we created
 a lot of USB devices and stacks before, this was very challeging, because 
 each time it looked to work OK, a new issues was found which needed fixing. 
 E.g. special cases in bitdestuffig, timing related issues, and so on.
@@ -17,6 +16,7 @@ A Cortex M0+ at 24 MHz can do the whole USB decoding within a single loop.
 With loop unrolling and some other techniques the clock frequency can be 
 decreased more. To keep the memory footprint low, we decided to start with
 24 MHz only for the first version.
+
 A synchronization method using an internal RC oscillator is in evaluation 
 phase. perspectively it can be possible to use e.g. the 21 MHz HFRCO of a
 EFM32ZG as clock source. Compared to other solutions, the synchronization 
@@ -28,9 +28,9 @@ which can be undeterministic. From RAM, it will execute always with
 
 Hardware requirements
 =====================
+We have tested this on EFM32ZG110F32 (See [EFM32ZG110 Quick Start Board v1.1](https://github.com/lemcu/EFM32ZG110-quick-start-board)).
 
-This software was up to now only tested on EFM32ZG110F32. It should work 
-on any other EFM32ZG, too.
+It should work on any other EFM32ZG, too. 
 
 Currently PA0 needs to connect to PC0 via a 1K5 resistor
 PC0 to D-
@@ -38,9 +38,12 @@ PC1 to D+ of the USB port.
 
 Apart from an external 24 MHz crystal nothing more is needed.
 
+Bootloader and GUI
+==================
+We have written a bootloader that works over LemcUSB. We also have a Qt based cross-platform GUI that interacts with this bootloader. These would be posted after testing.
+
 License:
 ========
-
 This library is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License version 3.0 as
 published by the Free Software Foundation and appearing in the file
