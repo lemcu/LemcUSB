@@ -18,7 +18,7 @@ decreased more. To keep the memory footprint low, we decided to start with
 24 MHz only for the first version.
 
 A synchronization method using an internal RC oscillator is in evaluation 
-phase. perspectively it can be possible to use e.g. the 21 MHz HFRCO of a
+phase. Perspectively, it can be possible to use e.g. the 21 MHz HFRCO of a
 EFM32ZG as clock source. Compared to other solutions, the synchronization 
 will most likely not retune the HFRCO, but act like a DPLL.
 
@@ -41,6 +41,10 @@ Apart from an external 24 MHz crystal nothing more is needed.
 Bootloader and GUI
 ==================
 We have written a bootloader that works over LemcUSB. We also have a Qt based cross-platform GUI that interacts with this bootloader. These would be posted after testing.
+
+Why EFM32 Zero Gecko ?
+======================
+Apart from lot of nice features (see EFM32ZG110F32 datasheet) at a price-point suitable for hobbyist, Silicon Lab's EFM32 peripheral library (emlib) is completly open source. "emlib" is available under a Zlib style open source license. 
 
 License:
 ========
