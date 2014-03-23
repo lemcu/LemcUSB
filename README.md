@@ -7,7 +7,7 @@ This software enables Cortex M0+ devices to act as Low speed USB device.
 It includes a lightweight USB & HID Stack and easily be optimized to 
 consume only 4KB of flash.
 
-The development too a lot of time, especially testing. Alltough we created
+The development took a lot of time, especially testing. Alltough we created
 a lot of USB devices and stacks before, this was very challeging, because 
 each time it looked to work OK, a new issues was found which needed fixing. 
 E.g. special cases in bitdestuffig, timing related issues, and so on.
